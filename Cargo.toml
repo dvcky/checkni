@@ -1,0 +1,16 @@
+[package]
+name = "checkni"
+version = "0.1.0"
+edition = '2018'
+
+[dependencies]
+md-5 = "0.10"
+roxmltree = "0.15"
+walkdir = "2"
+zip-extensions = "0.6"
+
+[profile.release]
+strip = true
+opt-level = 3
+lto = true
+codegen-units = 1
